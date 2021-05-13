@@ -8,12 +8,27 @@
     <meta name="keywords" content="UXUI, Ironhack, Design Principles">
     <meta name="author" content="Michaela Maia">
     <title>Michaela's Page</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- link index with style.css -->
+    <style type="text/css">  
+        /* div {
+            border: 1px red solid;
+        }  */
+    </style> 
 </head>
+
 <body>
     <!-- Header - start -->
     <header>
-    <img src="" alt="Michaela's logo"> logo
-    search
+    <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" alt="Michaela's logo">
+
+
+    <!-- # means sending to the same page -->
+    <form action="#"> 
+    <input type="search"> 
+    <input type="submit" value="Find" >
+    </form>
+
     <nav>
         About
         Products
@@ -22,86 +37,75 @@
     </nav>
     </header>
     <!-- Header - end -->
-
-    <!-- Header start -->
-    <sections>
-    <h1>Heading 1</h1>
-    <h3>Heading 3</h3>
-   Call to Action
-    </sections> 
-    <!-- header end -->
-
+    
+    <!-- Hero start -->
+    <section id="hero">
+        <h1>Heading 1</h1>
+        <h3>Heading 3</h3>
+        Call to Action
+    </section> 
+    <!-- hero end -->
     <!-- Articles Cards - start -->
     <section>
         <!-- Card 1 - start-->
-        <div>
-        <img src="" alt""> image
-        <h3>heading 3</h3>
-        <p>paragraph</p>
-        <img src="" alt"avatar">
-        <p>author name</p>
-        </div>
-        <!-- Card 1 - end -->   
-        
-        <!-- Card 2 - start-->
-        <div>
-            <img src="" alt""> image
+        <div class="card">
+            <img src="img/reinaldo-simoes-s4Q09ogMZtk-unsplash.jpeg" alt"" class=img-card> 
             <h3>heading 3</h3>
             <p>paragraph</p>
-            <img src="" alt"avatar">=
+            <img src="img/avatar_02.png" alt"avatar">
+            <p>author name</p>
+        </div>
+        <!-- Card 1 - end -->   
+        <!-- Card 2 - start-->
+        <div class="card">
+            <img src="img/alexander-lemann-qjdx0DytoYs-unsplash.jpeg" alt"" class="img-card"> image
+            <h3>heading 3</h3>
+            <p>paragraph</p>
+            <img src="img/avatar_04.png" alt"avatar">=
             <p>author name</p>
         </div>
         <!-- Card 2 - end -->
-
         <!-- Card 3 - start-->
-        <div>
-            <img src="" alt""> image
+        <div class="card">
+            <img src="img/matteus-silva-ESuXk-ssELk-unsplash.jpeg" alt"" class="img-card"> image
             <h3>heading 3</h3>
             <p>paragraph</p>
-            <img src="" alt"avatar">
+            <img src="img/avatar_06.png" alt"avatar">
             <p>author name</p>
         </div>
         <!-- Card 3 - end -->
-    </section>
-    <!-- Articles Cards - end -->
-
-  
-    <!-- Video - start -->
-    <section>
-            <video>
-                <source src=""type="video/mp4">
-            </video>
-    </section>
-
+        </section>
+        <!-- Articles Cards - end -->
+        <!-- Video - start -->
+        <section>
+                <video>
+                    <source src=""type="video/mp4">
+                </video>
+        </section>
     <!-- Video - end -->
-
     <!-- Features -start -->
         <!-- feature 1 start -->
         <div>
-            <img src=""alt="">
+            <img src="img/chris-turgeon-nFf3nZNMNCE-unsplash.jpeg"alt="" class="img-feat">
             <h2> title </h2>
-             <p>description</p>
+            <p>description</p>
         </div>
         <!-- feature 1 end -->
-
         <!-- feature 2 start -->
         <div>
-            <img src=""alt="">
+            <img src="img/gwenn-klabbers-YFKmarIXa00-unsplash.jpeg"alt="" class="img-feat">
             <h2> title </h2>
              <p>description</p>
         </div>
         <!-- feature 2 end -->
-
         <!-- feature 3 start -->
         <div>
-            <img src=""alt="">
+            <img src="img/hannah-busing-ZtUDTycw7uY-unsplash.jpeg"alt="" class="img-feat">
             <h2> title </h2>
              <p>description</p>
         </div>
         <!-- feature 3 end -->
-
     <!-- Features - end -->
-
     <!-- Contact -start -->
     <section>
         <div>
@@ -109,15 +113,27 @@
             <p>Address</p>
          </div>
          <div>
-            name
-            email
-            message
-            button
+             <form action="#">
+                <label for="name">Name</label> 
+                <input id="name" type="text" placeholder="Your Name"> 
+                
+                <br><br>
+
+                <label for="email">Email</label> 
+                <input id="email" type="email" placeholder="example@email.com" >
+
+                <br><br>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" cols="50" placeholder="Your message" ></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Send Message" >
+             </form>
         </div>
     </section>
-
     <!-- Contact - end -->
-
     <!-- footer - start -->
     <footer>
          <!-- menu - start -->
@@ -127,7 +143,6 @@
             Testimonials
         </div>
          <!-- menu - end -->
-
          <!-- Social Media - start -->
          <div>
             <h4>Social Media</h4> 
