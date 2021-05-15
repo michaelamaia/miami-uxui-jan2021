@@ -32,11 +32,11 @@ h6 {
 
 
 p {
-    color: red;
+    color: #333;
 }
 
 div {
-    border: 1px blue solid;
+    border: 1px #333 solid;
 }
 
 section {
@@ -101,7 +101,6 @@ a.cv-button:active {
     background-color: darkred;
 
 
-
 .card {
     width: 250px;
 }
@@ -121,11 +120,11 @@ a.cv-button:active {
 }
 
 .container {
-    display: flex
+    display: flex;
 }
 
 .author-card {
-    align-items: center
+    align-items: center;
 }
 
 .author-photo {
@@ -138,6 +137,6 @@ a.cv-button:active {
 #hero {
     background-image: url('../img/alexander-lemann-qjdx0DytoYs-unsplash.jpeg');
     background-size: cover;
-    height: 30vh;
+    height: 50vh;
     text-align: center;
 }
