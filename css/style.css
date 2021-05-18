@@ -2,8 +2,13 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Krona One', sans-serif;
+    margin: 10px 0;
 }
 
 h1 {
@@ -48,6 +53,11 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 36px;
+}
+
+footer {
+    justify-content: space-evenly;
+    padding: 40px;
 }
 
 img {
@@ -101,6 +111,8 @@ a.cv-button:active {
     background-color: darkred;
 }
 
+/* . for class */
+
 .card {
     width: 250px;
 }
@@ -138,9 +150,35 @@ a.cv-button:active {
     margin-right: 8px;
 }
 
+.feat-card {
+
+}
+
+/* # for id */
+
 #hero {
     background-image: url('../img/pomgranade\ and\ citrus.jpeg');
     background-size: cover;
     height: 30vh;
     text-align: center;
 }
+
+#hero div {
+    padding: 20px;
+}
+
+#articles {
+    justify-content: space-around;
+}
+
+#contact {
+    justify-content: space-around;
+    background-color: rgb(242, 181, 242);
+}
+
+
+
+/* #hero div h3 {
+    background-color: yellow;
+} */
+
