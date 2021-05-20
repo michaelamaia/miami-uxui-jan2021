@@ -64,6 +64,10 @@ img {
     /* width: 50% */
 }
 
+video {
+    width: 100%
+}
+
 /* LINKS */
 a:link, a:visited {
     text-decoration: none;
@@ -111,20 +115,43 @@ a.cv-button:active {
     background-color: darkred;
 }
 
+a.btn-rocio {
+    font-family: 'Poppins', sans-serif;
+    color: #131045;
+    background-color: white;
+    border: 3px solid #131045;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0 #131045;
+    border-radius: 100px ;
+}
+
+
 /* . for class */
 
 .card {
     width: 250px;
 }
 
+.img-holder {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    overflow: hidden; /* overflow:hidden crops the image */
+}
+
+
 .img-card {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     width: 100%;
 }
 
 .img-feat {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50px;
+    margin: 20px;
 }
 
 .icons {
@@ -154,6 +181,13 @@ a.cv-button:active {
 
 }
 
+.feat-item {
+    flex-grow: 1;
+}
+
+
+
+
 /* # for id */
 
 #hero {
@@ -176,7 +210,10 @@ a.cv-button:active {
     background-color: rgb(242, 181, 242);
 }
 
-
+#video {
+    padding: 0; 
+}
+ 
 
 /* #hero div h3 {
     background-color: yellow;
