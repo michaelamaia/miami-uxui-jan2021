@@ -79,26 +79,29 @@ input {
 
 input:focus {
     background-color: lightpink
+    outline: 0;
 }
 
 /* Forms */
 
 input[type=text] { 
    box-sizing: border-box;
+   width: 80%;
    background-image: url('../icons/user-line.png');
    background-repeat: no-repeat;
    background-position: 8px;
    padding-left: 40px;
-   width: 77%;
+   
 }
 
 input[type=email] {
     box-sizing: border-box;
+    width: 80%;
     background-image: url('../icons/mail-line.png');
     background-repeat: no-repeat;
     background-position: 8px;
     padding-left: 40px;
-    width: 77%;
+    
 }
 
 textarea {
@@ -112,6 +115,12 @@ textarea {
     resize: none;
 }
 
+textarea:focus {
+    outline:0;
+    background-color: mintcream;
+}
+
+
 input[type=submit]{
     background-color: orangered;
     border: none;
@@ -121,7 +130,7 @@ input[type=submit]{
 }
 
 #btn-form {
-    width: 90%;
+    width: 80%;
 }
 
 /* LINKS */
