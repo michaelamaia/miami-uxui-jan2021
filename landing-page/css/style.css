@@ -8,9 +8,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Prata';
-    margin: 50px 20px;
-
-
+    margin: 50px 0;
 }
 
 h1 {
@@ -42,20 +40,38 @@ div {
 }
 
 header {
-position: absolute;
 height: 96px;
-left: 0px;
-right: 0px;
-top: 0px;
+}
+
+/* 
+.img-holder {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    overflow: hidden; /* overflow:hidden crops the image */
+/* } */ */
+
+.img-holder {
+    position: relative;
+    height: 50px;
+    width: 100%;
 }
 
 .container {
     display: flex;
 }
 
+.card {
+
+}
+
+#features {
+    justify-content: space-around;
+}
+
 #hero {
-    background-image: url('../img/parrish-freeman-29W9RscuUMw-unsplash.jpeg')
-    background-size:cover;
-    height: 30vh;
+    background-image: url('../img/parrish-freeman-29W9RscuUMw-unsplash.jpeg');
+    background-size: cover;
+    height: 50vh;
     text-align: center;
 }
