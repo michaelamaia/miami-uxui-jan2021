@@ -1,0 +1,61 @@
+* {
+    font-family: 'poppins';
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prata';
+    margin: 50px 20px;
+
+
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem ;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+div {
+    border: 1px #333 solid;
+}
+
+header {
+position: absolute;
+height: 96px;
+left: 0px;
+right: 0px;
+top: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+#hero {
+    background-image: url('../img/parrish-freeman-29W9RscuUMw-unsplash.jpeg')
+    background-size:cover;
+    height: 30vh;
+    text-align: center;
+}
