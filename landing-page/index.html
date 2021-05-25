@@ -11,11 +11,11 @@
   
     <!--Header - Start -->
 <header class="container">
-        <img src="img/simbolo-degrade.png" alt="Wolkie logo">
+        <img src="img/logo_wolkie_nova.png" alt="Wolkie logo">
         <!-- # means sending to the same page -->
   <nav id="navbar">
       <a href="#">Home</a>
-      <a href="#">Features</a>
+      <a href="#features">Features</a>
       <a href="#">Blog</a>
   </nav>
 </header>
@@ -23,44 +23,52 @@
 
 <!-- Hero - Start -->
 <section id="hero">
-    <div>
-        <h1>Heading 1</h1>
-        <h3>Subtitle</h3>
-        <form action="#"> 
-            <input type="email"> 
-            <input type="submit">
-        </form>  
+    <div id="hero-box">
+        <div>
+            <h1>Uncomplicate your video production workflow</h1>
+            <h4>Review, approve and manage your media in less time, on the cloud.</h4>
+            <form action="#"> 
+                <input id="email" type="email" placeholder="Email" >
+                <input type="submit" class="button" value="Sign Up"  >
+            </form> 
+        </div> 
     </div>
 </section>
 
 <!-- Hero - End -->
 
 <!-- Video Start -->
-<section>
-    <video src=""></video>
+<section id="video-section">
+    <video width="50%" autoplay="" preload="none" playsinline="true" src="https://video.wixstatic.com/video/538487_1ff458b3c52b4c1bb9d1944e9a380769/1080p/mp4/file.mp4" controls></video>
 </section>
 
 <!-- Video End -->
 
 <!-- Features - Cards Start -->
-<section id="features" class="container"> 
+<section id="features" class="container-feature"> 
 <!-- Card 1 Start-->
-<div class="card">
-    <div class="img-holder">
-        <img src="img/kal-visuals-fVGH5SlgsoY-unsplash.jpeg" alt="">
-        <h2>Title</h2> 
-        <p>Description </p>
+    <div class="card">
+        <div class="img-holder">
+            <img src="img/kal-visuals-fVGH5SlgsoY-unsplash.jpeg" alt="">
+            <h3>Media Management</h3> 
+            <p>Organize and preserve all your media in a digital library.</p>
+        </div>
+        <div>
+            <button class="button">Find out more</button> 
+        </div>
     </div>
-</div>
-<!-- Card 1 End -->
 
+<!-- Card 1 End -->
 
 <!-- Card 2 Start -->
 <div class="card">
     <div class="img-holder">
         <img src="img/post production.jpeg" alt="">
-        <h2>Title</h2> 
-        <p>Description </p>
+        <h3>Precise Review</h3> 
+        <p>Review and comment on your videos, frame by frame. </p>
+    </div>
+    <div>
+        <button class="button">Find out more</button> 
     </div>
 </div>
 <!-- Card 2 End -->
@@ -69,37 +77,32 @@
 <div class="card">
     <div class="img-holder">
         <img src="img/client on computer.jpeg" alt="">
-        <h2>Title</h2> 
-        <p>Description </p>
+        <h3>Fast Approval</h3> 
+        <p>Send projects directly to your clients for approval.</p>
+    </div>
+    <div>
+        <button class="button">Find out more</button> 
     </div>
 </div>
-<!-- Card 3 End -->
-
-<!-- Card 4 Start -->
-<!-- <div class="container">
-    Image
-    <h2>Title</h2> 
-    <p>Description </p>
-</div> -->
- <!--Card 4 End -->
 </section>
 <!-- Products - Cards - End -->
 
 <!-- Footer - Start -->
 
 <!-- Social Media - Start -->
-<div>
-    <a href="https://www.wolkie.io/">Homepage</a>
-    <a href="https://www.instagram.com/wolkie.io/">Instagram</a>
-    <a href="https://www.facebook.com/wolkie.io">Facebook</a>
-</div>
-<!-- Social Media - End  -->
-
-<!-- Menu - start-->
-<div>
-    <a href="#">Terms and Conditions</a>
-    <a href="#">Privacy Policy</a>
-</div>
+<footer>
+    <div>
+        <a href="https://www.wolkie.io/"><img src="img/global-line.png" alt=""></a>
+        <a href="https://www.instagram.com/wolkie.io/"><img src="img/instagram-line.png" alt=""></a>
+        <a href="https://www.facebook.com/wolkie.io"><img src="img/facebook-box-line.png" alt=""></a>
+    </div>
+    <!-- Social Media - End  -->
+    <!-- Menu - start-->
+    <div>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+</footer>
 <!-- Menu - end  -->
 
 <!-- Footer - end  -->

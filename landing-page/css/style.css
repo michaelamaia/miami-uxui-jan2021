@@ -7,8 +7,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Prata';
-    margin: 50px 0;
+    font-family: 'Poppins';
+    margin: 30px 0;
 }
 
 h1 {
@@ -35,13 +35,64 @@ p {
     font-size: 1rem;
 }
 
-div {
+/* div {
     border: 1px #333 solid;
-}
+} */
 
 header {
 height: 96px;
 }
+
+#features {
+    padding: 100px 0;
+    background-color: #4bb5d9;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.img-holder {
+    height: 180px;
+    width: 100%;
+}
+
+.img-holder h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.img-holder p {
+    text-align: center;
+    margin: 10px;
+}
+
+.button {
+    background-color: #00baf9; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-bottom: 36px;
+    border-radius: 8px;
+  }
+  
+  .button:hover {
+    background-color: #008CBA;
+  }
 
 /* 
 .img-holder {
@@ -49,13 +100,8 @@ height: 96px;
     height: 180px;
     width: 100%;
     overflow: hidden; /* overflow:hidden crops the image */
-/* } */ */
+/* } */
 
-.img-holder {
-    position: relative;
-    height: 50px;
-    width: 100%;
-}
 
 .container {
     display: flex;
@@ -66,13 +112,26 @@ height: 96px;
 }
 
 .container img {
-    width: 100px;
+    width: 300px;
+}
+
+.container-feature {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    padding: 16px;
+}
+
+.container-feature img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
 #navbar {
     display: flex;
     justify-content: space-between;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 46px;
     padding: 20px;
 }
@@ -85,19 +144,72 @@ height: 96px;
 
 #navbar a:hover {
     color: rgb(0, 187, 255);
+
 }
 
 #navbar a:active {
-    color: rgb(0, 187, 255);
-}
-
-#features {
-    justify-content: space-around;
+    color: rgb(4, 250, 250);
 }
 
 #hero {
     background-image: url('../img/parrish-freeman-29W9RscuUMw-unsplash.jpeg');
     background-size: cover;
-    height: 50vh;
+    height: 40vh;
     text-align: center;
+}
+
+#hero-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-box div form {
+    margin-top: 50px;
+}
+
+#email { 
+    padding: 16px 24px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#email:focus {
+    background-color: rgb(197, 240, 255);
+    outline: 0;
+}
+
+#video-section {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-between;
+    margin: 0 20px;
+}
+
+
+footer div a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    margin: 0 20px;
+}
+
+footer div a:hover {
+    color: rgb(0, 187, 255);
+}
+
+footer div a:active {
+    color: rgb(4, 250, 250);
 }
